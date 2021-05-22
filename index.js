@@ -40,6 +40,6 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-// app.use("/home", (req, res) => {
-//   res.status(200).json({ message: "Connected to Timesheet Bot API" });
-// });
+app.use("/", (req, res) => {
+  res.status(200).json({ message: "Connected to Timesheet Bot API" });
+});
