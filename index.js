@@ -16,8 +16,7 @@ const bot = new SlackBot({
 
 function createJob() {
   const task = cron.schedule(
-    // "35 14 * * 1-6",
-    "*/2 * * * *",
+    "30 11 * * 1-5",
     () => {
       bot.postMessageToChannel(
         "general",
