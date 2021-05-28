@@ -20,7 +20,7 @@ function createJob() {
     () => {
       bot.postMessageToChannel(
         "general",
-        "Time to fill up your timesheet guys!"
+        "Today is Friday, time to fill up your timesheet guys!"
       );
     },
     {
